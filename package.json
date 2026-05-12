@@ -1,12 +1,22 @@
 {
   "name": "type-dantic",
-  "module": "index.ts",
+  "module": "src/index.ts",
   "type": "module",
   "private": true,
   "devDependencies": {
-    "@types/bun": "latest"
+    "@biomejs/biome": "2.4.15",
+    "@types/bun": "latest",
+    "@types/node": "^25.7.0",
+    "knip": "^6.13.1"
   },
   "peerDependencies": {
-    "typescript": "^5"
+    "typescript": "^6.0.3"
+  },
+  "scripts": {
+    "knip": "knip",
+    "lint": "biome lint",
+    "format": "biome format",
+    "verify": "bun run lint && bun run knip && bun test",
+    "start": "bun run ."
   }
 }
