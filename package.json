@@ -2,6 +2,7 @@
   "name": "type-dantic",
   "module": "src/index.ts",
   "type": "module",
+  "license": "MIT",
   "private": true,
   "devDependencies": {
     "@biomejs/biome": "2.4.15",
